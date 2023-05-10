@@ -1,0 +1,11 @@
+{
+  "name": "async-await",
+  "version": "1.0.0",
+  "description": "a basic understanoding of Promises and async-Await in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node js/async_await/test.js"
+  },
+  "author": "hgiudatto",
+  "license": "ISC"
+}

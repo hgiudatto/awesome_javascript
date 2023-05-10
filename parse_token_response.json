@@ -1,0 +1,10 @@
+{
+  "responseCode": "string",
+  "responseMessage": "string",
+  "response": {
+    "decryptedToken": "string",
+    "signerCN": "string",
+    "signerId": "string",
+    "signingDate": "string"
+  }
+}

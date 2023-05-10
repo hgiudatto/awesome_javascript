@@ -1,0 +1,5 @@
+{
+  "responseCode": "string",
+  "responseMessage": "string",
+  "token": "string"
+}
