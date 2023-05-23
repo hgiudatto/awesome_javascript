@@ -1,16 +1,18 @@
-// The JavaScript Array Handbook – JS Array Methods Explained with Examples
-// https://www.freecodecamp.org/news/the-javascript-array-handbook/
 
-// https://github.com/atapas/js-handbook-examples#%EF%B8%8F-list-of-content
+/* Funciones de Flecha - Arrow Functions
+function name2UpperCase(text) {
+  const nameUpper = text.toUpperCase();
+  console.log(nameUpper);
+}
 
 const name2UpperCase = (text) => {
   const nameUpper = text.toUpperCase();
   console.log(nameUpper);
 };
 
-name2UpperCase("Achilles");
+name2UpperCase("Achilles"); */
 
-const foodAndDrinks = [
+/* const foodAndDrinks = [
   "🥝",
   "🍔",
   "🥦",
@@ -28,17 +30,16 @@ const foodAndDrinks = [
   "🍋",
   "🍕",
   "🥕",
-  "🫘",
 ];
 let frenchFries = foodAndDrinks[4];
-console.log(frenchFries);
+console.log(frenchFries); */
 
-// how to add elements to an array in JS
+/* Agregando elementos a un array
 foodAndDrinks.push("🧇");
 
-Array.isArray(foodAndDrinks);
+Array.isArray(foodAndDrinks); */
 
-// Destructuring
+/* Destructuring
 let [hamburger, hotDog, waffle] = ["🍔", "🌭", "🧇"];
 console.log(hamburger);
 
@@ -58,31 +59,31 @@ console.log(`Sold Out: ${soldOut}`);
 
 foodAndDrinks.unshift("🍖");
 
-foodAndDrinks.forEach((num, ind) => console.log(`Index: ${ind} Value: ${num}`));
+foodAndDrinks.forEach((num, ind) => console.log(`Index: ${ind} Value: ${num}`)); */
 
-// Copy and Clone
+/* Copy y Clone
 let foodAndDrinksCopy = foodAndDrinks.slice();
-let foodAndDrinksCopy0 = [...foodAndDrinks];
+let foodAndDrinksCopy0 = [...foodAndDrinks]; */
 
-// Array Destructuring in JavaScript
+/* Array Destructuring
 let [mushroom, pretzel, apple] = ["🍄", "🥨", "🍎"];
-console.log(pretzel);
+console.log(pretzel); */
 
-// Default value
+/* Default value
 let [pretzels, mushrooms = "🍄"] = ["🥨"];
 console.log(mushrooms);
-console.log(pretzels);
+console.log(pretzels); */
 
-// Skip
+/* Skip
 let [aMushroom, , anApple] = ["🍄", "🥨", "🍎"];
 console.log(aMushroom);
-console.log(anApple);
+console.log(anApple); */
 
-// Nested Array Destructuring - Fetch the carrot
+/* Nested Array Destructuring - Fetch the carrot
 let [, , , , [, carrot]] = ["🍉", "🍌", "🍍", "🍑", ["🍄", "🥕", "🥦"]];
-console.log(carrot);
+console.log(carrot); */
 
-// rest parameter
+/* rest parameter
 const [, banana, , peach, ...theRest] = [
   "🍉",
   "🍌",
@@ -103,23 +104,23 @@ const [watermelon, , , , [, aCarrot, broccoli], ...remaining] = [
 console.log(watermelon);
 console.log(aCarrot);
 console.log(broccoli);
-console.log(remaining);
+console.log(remaining); */
 
-// How to Use the Spread Operator in JS
+/* Usando el Spread Operator
 const tuttiFrutti = [
   ...[watermelon, , , , [, aCarrot, broccoli], ...remaining],
 ];
 
-console.log("TuttiFrutti: ", tuttiFrutti);
+console.log("TuttiFrutti: ", tuttiFrutti); */
 
-// Swap values with destructurng
+Swappeando valores con destructuring
 let first = "🍌";
 let second = "🍍";
 [first, second] = [second, first];
 console.log("first: ", first);
 console.log("second: ", second);
 
-// Merge Arrays
+Merge Arrays
 const food = ["🍔", "🍟", "🌭", "🥞", "🍕"];
 const drinks = ["🥤", "🍵", "☕"];
 
@@ -133,7 +134,7 @@ const showLunch = () => {
 
 showLunch();
 
-// JavaScript Array Methods
+Array Methods
 const one = [1, 2, 3];
 const two = [4, 5, 6];
 const three = [7, 8, 9];
@@ -172,7 +173,7 @@ const fastFood = ["🍔", "🍟", "🌭", "🥞", "🍕"];
 
 console.log(`fast food: ${fastFood.join("|")}`);
 
-// The fill() array method
+Usamos fill() array method
 const showFilled = () => {
   fastFood.fill("🍔");
   fastFood.map((t) => console.log(t));
@@ -185,11 +186,11 @@ const showFilledSome = () => {
 };
 showFilledSome();
 
-// The includes() array method
+Usamos includes() array method
 console.log(fastFood.includes("🌭"));
 console.log(fastFood.includes("🌰"));
 
-// The indexOf() array method
+Usamos indexOf() array method
 console.log(fastFood.indexOf("🍔"));
 console.log(fastFood.indexOf("🍟"));
 console.log(fastFood.indexOf("🌭"));
@@ -217,11 +218,11 @@ console.log(
   names.lastIndexOf("tom")
 );
 
-// The reverse() array method
+Usamos reverse() array method
 const swapped = ["🍔", "🌭", "🍕"].reverse();
 console.log("🚀 ~ file: array_methods.js ~ line 214 ~ swapped", swapped);
 
-// The sort() array method
+Usamos array method
 const sorted = ["🍔", "🌭", "🍕"].sort();
 console.log("🚀 ~ file: array_methods.js ~ line 224 ~ sorted", sorted);
 
@@ -246,7 +247,7 @@ console.log(
   descSortedNums
 );
 
-// The splice() array method
+Usamos splice() array method
 const foods = ["🍔", "🌭", "🍕"];
 foods.splice(2, 0, "🍟");
 
@@ -267,12 +268,8 @@ const showSplicedFastFoods = () => {
 };
 showSplicedFastFoods();
 
-// Static Array Methods in JavaScript
-// 1. Array.isArray() -> L. 37
+Usamos Static Array Methods in JavaScript
 
-// 2. Array.from() -> array_methods.html
-
-// 3. Array.of()
 const arrayOfThings = Array.of(
   true,
   "🥞",
@@ -292,7 +289,7 @@ const showArrayOf = () => {
 };
 showArrayOf();
 
-// Array Iterator Methods in JavaScript
+Usamos Array Iterator Methods in JavaScript
 let students = [
   {
     id: 001,
@@ -336,26 +333,26 @@ let students = [
   },
 ];
 
-// The filter() array method
+Usamos filter() array method
 const femaleStudents = students.filter((value) => {
   return value.gender === "F";
 });
 console.log(`female students: `, femaleStudents);
 
-// The map() array method
+Usamos map() array method
 console.log(`Students: `);
 const fullNames = students.map((student) => {
   console.log(`fullname: ${student.f_name} ${student.l_name}`);
 });
 
-// The reduce() array method
+Usamos reduce() array method
 const total = students.reduce((accumulator, student, currentIndex, array) => {
   accumulator = accumulator + student.paid;
   return accumulator;
 }, 0);
 console.log(total);
 
-// The some() array method
+Usamos some() array method
 const hasSingleStudent = students.some((student) => {
   return !student.married;
 });
@@ -363,25 +360,25 @@ hasSingleStudent
   ? console.log("has single student")
   : console.log("Everyone is married");
 
-// The find() array method
+Usamos find() array method
 const student = students.find((value) => {
   return value.paid >= 300;
 });
 console.log(student.f_name);
 
-// The every() array method
+Usamos every() array method
 
 const atLeastTwoCourses = students.every((value) => {
   return value.courses.length >= 2;
 });
 console.log(atLeastTwoCourses);
 
-// Proposed Array Methods
+Proposed Array Methods
 
-// The at() Method
+Usamos at() Method
 
-// const junkFoodILove = ["🥖", "🍔", "🍟", "🍕", "🌭", "🥪", "🌮", "🍿"];
-// console.log(foodAndDrinks.at(1));
+const junkFoodILove = ["🥖", "🍔", "🍟", "🍕", "🌭", "🥪", "🌮", "🍿"];
+console.log(foodAndDrinks.at(1));
 
 snacks = ["🌰", "🥜", "🥐", "🧀", "🌮"];
 snacks.splice(3, 0, "🌭");
