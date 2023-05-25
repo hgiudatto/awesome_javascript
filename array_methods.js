@@ -1,4 +1,6 @@
 
+// * 3_array_metodos.js
+
 /* Funciones de Flecha - Arrow Functions
 function name2UpperCase(text) {
   const nameUpper = text.toUpperCase();
@@ -60,6 +62,14 @@ console.log(`Sold Out: ${soldOut}`);
 foodAndDrinks.unshift("🍖");
 
 foodAndDrinks.forEach((num, ind) => console.log(`Index: ${ind} Value: ${num}`)); */
+
+// * 4_destructuring_array_object.js
+
+// * 5_array_CRUD.js
+
+// * 6_array_iterator_metodos.js
+
+// * 7_spread_rest_operators.js
 
 /* Copy y Clone
 let foodAndDrinksCopy = foodAndDrinks.slice();
