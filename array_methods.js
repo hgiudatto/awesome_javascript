@@ -71,6 +71,14 @@ foodAndDrinks.forEach((num, ind) => console.log(`Index: ${ind} Value: ${num}`));
 
 // * 7_spread_rest_operators.js
 
+// * 8_callbacks.js
+
+// * 9_callback-hell.js
+
+// * 10_promises.js
+
+// * 11_async-await.js
+
 /* Copy y Clone
 let foodAndDrinksCopy = foodAndDrinks.slice();
 let foodAndDrinksCopy0 = [...foodAndDrinks]; */
