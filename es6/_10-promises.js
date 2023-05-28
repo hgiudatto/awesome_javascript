@@ -1,9 +1,11 @@
 // Promise => MDN Web Docs: El objeto Promise representa la eventual culminación
 // (o falla) de una operación asincrona y su valor resultante.
 
-const promise = new Promise((resolve, reject) => {});
-
-console.log(`promise: `, promise);
+// Objeto que que retorna un valor el cual esperamos recibir en el futuro pero no ahora.
+// ticket - lapso de tiempo - pedido en mano => Pending, Rejected, Fulfilled
+// console
+const promise1 = new Promise((resolve, reject) => {});
+console.log(promise);
 
 /* let stocks = {
   Frutas: ["frutilla", "uva", "banana", "manzana"],
